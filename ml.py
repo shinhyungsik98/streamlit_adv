@@ -33,10 +33,12 @@ def run_ml() :
         y_pred=y_pred[0]
         print(y_pred)
         #2.숫자의 소수점 뒤 제거
-        y_pred = round(y_pred)
+        y_pred = round(y_pred,3)
         print(y_pred)
 
-        st.text(f'광고로 인하여 팔린 물품갯수는 {y_pred * 1000} 개 입니다.')
+        
+
+        st.text(f'광고로 인하여 팔린 물품갯수는 {int(y_pred * 1000)} 개 입니다.')
 
 
 
