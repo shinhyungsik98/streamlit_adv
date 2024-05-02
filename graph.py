@@ -45,7 +45,14 @@ def run_graph () :
 
 
 
-   
+    st.subheader('히스토그램으로 표현하기')
+     
+    selected_column = st.selectbox("히스토그램을 그릴 열 선택", adv.columns)
+    st.write(f"선택된 열: {selected_column}")
+    st.write("히스토그램:")
+    fig, ax = plt.subplots(figsize=(10, 5))
+    adv[selected_column].hist(ax=ax)
+    st.pyplot(fig)
 
 
     
