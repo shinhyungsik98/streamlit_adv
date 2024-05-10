@@ -28,7 +28,6 @@ def run_ml() :
 
         y_pred = regressor.predict(new_data)
 
-        st.write(y_pred)
 
         y_pred=y_pred[0]
         print(y_pred)
@@ -38,7 +37,7 @@ def run_ml() :
 
         
 
-        st.text(f'광고로 인하여 팔린 물품갯수는 {int(y_pred * 1000)} 개 입니다.')
+        st.write(f'광고로 인하여 팔린 물품갯수는 {int(y_pred * 1000)} 개 입니다.')
 
 
 
