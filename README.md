@@ -8,7 +8,9 @@ tv광고,radio광고,news광고들의 금액으로 sales 예측하기를 해보�
 머신러닝을 통해 인공지능을 개발한 후에, Streamlit 을 이용해서 , EDA 및 금액 예측하는 
 대시보드 앱을 개발하였습니다.
 
-출처 : https://www.kaggle.com/datasets/ashydv/advertising-dataset?rvi=1
+데이터 출처 : https://www.kaggle.com/datasets/ashydv/advertising-dataset?rvi=1
+
+접속링크 : http://ec2-13-124-35-189.ap-northeast-2.compute.amazonaws.com:8502/
 
 -대시보드 앱 개발 방법-
 
