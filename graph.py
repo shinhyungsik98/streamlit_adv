@@ -50,9 +50,27 @@ def run_graph () :
     selected_column = st.selectbox("히스토그램을 그릴 열 선택", adv.columns)
     st.write(f"선택된 열: {selected_column}")
     st.write("히스토그램:")
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(15, 5))
     adv[selected_column].hist(ax=ax)
     st.pyplot(fig)
+
+
+
+
+
+    st.subheader('박스플롯으로 표현하기')
+    fig, ax = plt.subplots()
+    sb.boxplot(data=adv, ax=ax)
+    st.pyplot(fig)
+
+        
+
+ 
+
+
+    
+
+
 
 
     

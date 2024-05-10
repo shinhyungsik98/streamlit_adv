@@ -14,7 +14,7 @@ def run_eda() :
     choice_radio=st.radio('선택하세요',radio_menu)
 
     if choice_radio == radio_menu [0] :
-        st.dataframe(df.head(10))
+        st.dataframe(df)
     elif choice_radio == radio_menu [1] :
         st.dataframe(df.describe())
 
